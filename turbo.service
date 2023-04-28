@@ -1,0 +1,11 @@
+[Unit]
+Description=Turboboost control 
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/start_turbo_off.sh 
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

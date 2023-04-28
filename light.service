@@ -1,0 +1,9 @@
+[Unit]
+Description=Light control 
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/light.sh
+
+[Install]
+WantedBy=multi-user.target

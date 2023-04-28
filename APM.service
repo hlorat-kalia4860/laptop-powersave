@@ -1,0 +1,11 @@
+[Unit]
+Description=APM and SWAP control 
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/start_APM_redactor.sh 
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

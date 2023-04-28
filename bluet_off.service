@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetooth control 
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/bluet_off.sh 
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
