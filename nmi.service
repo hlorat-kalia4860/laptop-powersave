@@ -1,0 +1,11 @@
+[Unit]
+Description=NMI Wathcdog control
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nmi_service_start.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
