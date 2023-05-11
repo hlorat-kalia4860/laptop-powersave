@@ -1,11 +1,11 @@
 #!/bin/bash
-B=$(ex -s +1p +q /sys/class/backlight/intel_backlight/brightness)
+read B < /sys/class/backlight/intel_backlight/brightness
 C=$B
-A=$(($C/2))
+let A=$C/2
 while true
 do
 sleep 5
-if grep "0" /sys/class/power_supply/AC0/online
+if grep "0" /sys/class/power_supply/ADP1/online
 then
 sudo echo $A > /sys/class/backlight/intel_backlight/brightness
 else

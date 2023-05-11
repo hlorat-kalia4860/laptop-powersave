@@ -1,5 +1,5 @@
 #!/bin/bash
-if grep "0" /sys/class/power_supply/AC0/online
+if grep "0" /sys/class/power_supply/ADP1/online
 then 
 source /usr/bin/VMWTS/time_up.sh
 else
