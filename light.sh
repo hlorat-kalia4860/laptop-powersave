@@ -5,7 +5,7 @@ let A=$C/2
 while true
 do
 sleep 5
-if grep "0" /sys/class/power_supply/ADP1/online
+if grep "0" /sys/class/power_supply/ACAD/online
 then
 sudo echo $A > /sys/class/backlight/intel_backlight/brightness
 else
